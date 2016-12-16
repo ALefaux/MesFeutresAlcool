@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.1_565d9c26e2f53f7b97279835fe42ac05f5631a40/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_231033a8533369cf361617c1137d576161490206/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/exploded-aar/com.github.Raizlabs.DBFlow/dbflow/4.0.0-beta2/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="10f85341d6f1981bb965100870155d8e65a1edcc">
+        <dex dex="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.Raizlabs.DBFlow-dbflow-4.0.0-beta2_b86b205382078d3832d67e934f0994f9715930ae/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.1_e703142ebf818fb5769cda9574dead853ee5f31f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_38251216c3100df6d93662f4b8bb872ff6b596d2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_daa10dd37be5465b259f4f0096765aa934cc917d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.1_6ae697b918c705473711fd121ab2bea144edcfa5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_c9661074cf6a72c58eae6c22209ca30f03c9b9d4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_f15c3ce89bfe84a5a7402d885c71893438c764bc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.1_8924235601ce9c9c5d90fa9230d9f8063a35d04c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.0.1_0aadda2e1db579adcf5f0ae7c102eb8127010162/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="db816d0c52d4f4d9f0853706b65344b72b3ed9d9">
+        <dex dex="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_58762462ee07dc5d28ec78170f525bcacf232420/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.1_abb4e5ecbd7d04e647d85d38aafe7831d84e2e95/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_2d7409169403150b70fe9eb06ff3c45e8b607f5b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="fb3231d4a6354854126e85707938f96110718c2a">
+        <dex dex="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_2a8af5cf7de916034b2dee52afa0dc9cd48c0796/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.1_c89ff6a86a925c6e18d89e1bf796adea310bfe0a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.1_aae13ad957c89710779299d4310dcc66d975ec70/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.1_9c8fffff5d75e297aaa0388637d9ddad337b3bfa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Axou/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_899c8af690f936d0135980d869e4945a01cdb254/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_44ca6971d1fd77e3ceb7769c4e60244f0e92c532/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.0.1_53f761d474a831085f571a153cd8b84dc07faf1d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Axou/.gradle/caches/modules-2/files-2.1/com.github.Raizlabs.DBFlow/dbflow-core/4.0.0-beta2/5e4cc4f3b5bcaa12a8053b4a1ecf0c738821a91b/dbflow-core-4.0.0-beta2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5e4cc4f3b5bcaa12a8053b4a1ecf0c738821a91b">
+        <dex dex="/Users/Axou/Documents/Programmation/Android/MesFeutresAlcool/app/build/intermediates/transforms/dex/debug/folders/1000/10/dbflow-core-4.0.0-beta2_c6e232ca8d71d4038dec6c5ded78abad85193e16/classes.dex" />
+    </item>
+
+</items>

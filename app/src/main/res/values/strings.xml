@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Mes Feutres Alcool</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="fragment_marques_vide">Il n\'y a pas encore de marques</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="fragment_modele_vide">Il n\'y a pas encore de modèles</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

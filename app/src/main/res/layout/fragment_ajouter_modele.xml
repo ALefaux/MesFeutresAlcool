@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fr.itomorrow.mesfeutresalcool.fragments.AjouterModeleFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/fragment_ajoutermodele_modele_edittext"
+        android:hint="Modele ..."
+        android:layout_weight="1" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/fragment_ajoutermodele_couleur_edittext"
+        android:hint="Couleur ..."
+        android:layout_weight="1" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/fragment_ajoutermodele_code_edittext"
+        android:hint="Code ..."
+        android:layout_weight="1" />
+
+    <Button
+        android:text="Ajouter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_ajoutermodele_ajouter_button"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:text="Annuler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_ajoutermodele_annuler_button"
+        android:layout_margin="16dp" />
+</LinearLayout>

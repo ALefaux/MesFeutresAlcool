@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="fr.itomorrow.mesfeutresalcool.MainActivity">
+
+    <item
+        android:id="@+id/action_add_marque"
+        android:orderInCategory="1"
+        android:title="Ajouter Marque"
+        android:icon="@drawable/ic_action_addmarque"
+        app:showAsAction="ifRoom" />
+</menu>

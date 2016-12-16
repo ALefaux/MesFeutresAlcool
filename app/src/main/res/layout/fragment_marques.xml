@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.itomorrow.mesfeutresalcool.fragments.MarquesFragment"
+    android:orientation="vertical"
+    android:gravity="bottom|right">
+
+    <TextView
+        android:text="@string/fragment_marques_vide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_marques_listviewvide_textview"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_marques_marques_listview" />
+
+</RelativeLayout>
