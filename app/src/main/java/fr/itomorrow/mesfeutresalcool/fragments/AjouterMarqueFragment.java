@@ -3,7 +3,11 @@ package fr.itomorrow.mesfeutresalcool.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
+import android.text.InputFilter;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,6 +31,7 @@ public class AjouterMarqueFragment extends Fragment implements View.OnClickListe
     private Button mButtonAnnuler;
 
     private FragmentManagerInterface mFragmentManager;
+    private int mIdMarque;
 
     public AjouterMarqueFragment() {
         // Required empty public constructor
@@ -41,6 +46,13 @@ public class AjouterMarqueFragment extends Fragment implements View.OnClickListe
         mEditTextMarque = (EditText) rView.findViewById(R.id.fragment_ajouter_marque_marque_edittext);
         mButtonAjouter = (Button) rView.findViewById(R.id.fragment_ajouter_marque_ajouter_button);
         mButtonAnnuler = (Button) rView.findViewById(R.id.fragment_ajouter_marque_annuler_button);
+
+        if(getArguments() != null && getArguments().containsKey("STRING_MARQUE")
+                && getArguments().containsKey("INT_MARQUE")) {
+            mEditTextMarque.setText(getArguments().getString("STRING_MARQUE"));
+            mIdMarque = getArguments().getInt("INT_MARQUE");
+            mButtonAjouter.setText("Modifier");
+        }
 
         mButtonAjouter.setOnClickListener(this);
         mButtonAnnuler.setOnClickListener(this);
@@ -61,9 +73,14 @@ public class AjouterMarqueFragment extends Fragment implements View.OnClickListe
             case R.id.fragment_ajouter_marque_ajouter_button:
                 String tMarqueString = mEditTextMarque.getText().toString();
                 if(!tMarqueString.equals("")){
-                    Marque tMarque = new Marque();
-                    tMarque.setMarque(tMarqueString);
-                    tMarque.save();
+                    Marque tObjMarque = new Marque();
+
+                    if(mIdMarque >= 0) {
+                        tObjMarque.setIdMarque(mIdMarque);
+                    }
+
+                    tObjMarque.setMarque(tMarqueString);
+                    tObjMarque.save();
 
                 }
             case R.id.fragment_ajouter_marque_annuler_button:

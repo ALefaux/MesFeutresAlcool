@@ -4,7 +4,6 @@ package fr.itomorrow.mesfeutresalcool.fragments;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,7 +12,6 @@ import android.widget.EditText;
 
 import fr.itomorrow.mesfeutresalcool.R;
 import fr.itomorrow.mesfeutresalcool.database.Modele;
-import fr.itomorrow.mesfeutresalcool.database.NewMarque;
 import fr.itomorrow.mesfeutresalcool.interfaces.FragmentManagerInterface;
 
 /**
@@ -31,6 +29,7 @@ public class AjouterModeleFragment extends Fragment implements View.OnClickListe
     private Button mAnnulerButton;
 
     private int mIdMarque;
+    private int mIdModele;
 
     private FragmentManagerInterface mFragmentManager;
 
@@ -38,13 +37,6 @@ public class AjouterModeleFragment extends Fragment implements View.OnClickListe
         // Required empty public constructor
     }
 
-
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        mContext = context;
-        mFragmentManager = (FragmentManagerInterface) getActivity();
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -60,10 +52,28 @@ public class AjouterModeleFragment extends Fragment implements View.OnClickListe
 
         mIdMarque = getArguments().getInt("ID_MARQUE");
 
+        if(getArguments() != null && getArguments().containsKey("MODELE_STRING")) {
+            mIdModele = getArguments().getInt("IDMODELE_INT");
+            mModeleEditText.setText(getArguments().getString("MODELE_STRING"));
+            mCouleurEditText.setText(getArguments().getString("COULEUR_STRING"));
+            mCodeEditeText.setText(getArguments().getString("CODE_STRING"));
+
+            mAjouterButton.setText("Modifier");
+        }else {
+            mIdModele = -1;
+        }
+
         mAjouterButton.setOnClickListener(this);
         mAnnulerButton.setOnClickListener(this);
 
         return rView;
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        mContext = context;
+        mFragmentManager = (FragmentManagerInterface) getActivity();
     }
 
     @Override
@@ -76,6 +86,8 @@ public class AjouterModeleFragment extends Fragment implements View.OnClickListe
 
                 if(!tModele.equals("")){
                     Modele tModeleObject = new Modele();
+                    if(mIdModele != -1)
+                        tModeleObject.setmIdModele(mIdModele);
                     tModeleObject.setmModele(tModele);
                     tModeleObject.setmCouleur(tCouleur);
                     tModeleObject.setmCode(tCode);
@@ -87,7 +99,6 @@ public class AjouterModeleFragment extends Fragment implements View.OnClickListe
                 ModeleFragment tFragment = new ModeleFragment();
                 Bundle tBundle = new Bundle();
                 tBundle.putInt("ID_MARQUE", mIdMarque);
-                tFragment.setArguments(tBundle);
 
                 mFragmentManager.showFragment(tFragment, tBundle);
                 break;

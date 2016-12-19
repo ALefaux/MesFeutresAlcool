@@ -10,7 +10,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType="textCapWords|textPersonName"
         android:ems="10"
         android:id="@+id/fragment_ajoutermodele_modele_edittext"
         android:hint="Modele ..."
@@ -19,7 +19,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType="textCapWords|textPersonName"
         android:ems="10"
         android:id="@+id/fragment_ajoutermodele_couleur_edittext"
         android:hint="Couleur ..."
@@ -28,7 +28,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType="textCapWords|textPersonName"
         android:ems="10"
         android:id="@+id/fragment_ajoutermodele_code_edittext"
         android:hint="Code ..."

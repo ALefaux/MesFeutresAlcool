@@ -24,6 +24,10 @@ public class Marque extends BaseModel {
         return idMarque;
     }
 
+    public void setIdMarque(int idMarque){
+        this.idMarque = idMarque;
+    }
+
     public String getMarque(){
         return marque;
     }

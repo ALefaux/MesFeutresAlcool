@@ -35,7 +35,6 @@ public class MarquesFragment extends Fragment implements View.OnClickListener, L
     private TextView mTextView;
 
     private FragmentManagerInterface mFragmentManager;
-    private MarqueArrayAdapter mMarqueArrayAdapter;
     private List<Marque> mMarques;
 
     public MarquesFragment() {
@@ -65,7 +64,6 @@ public class MarquesFragment extends Fragment implements View.OnClickListener, L
             case R.id.action_add_marque:
                 AjouterMarqueFragment tFragment = new AjouterMarqueFragment();
 
-                // Affichage du fragment d'ajout de marque
                 mFragmentManager.showFragment(tFragment);
 
                 break;
@@ -82,8 +80,10 @@ public class MarquesFragment extends Fragment implements View.OnClickListener, L
         if(mMarques.size() > 0){
             mTextView.setVisibility(View.INVISIBLE);
 
-            mMarqueArrayAdapter = new MarqueArrayAdapter(getActivity(), 0, mMarques);
-            mListView.setAdapter(mMarqueArrayAdapter);
+            MarqueArrayAdapter tMarqueArrayAdapter = new MarqueArrayAdapter(getActivity(), 0, mMarques);
+            tMarqueArrayAdapter.setFragmentManager(mFragmentManager);
+            mListView.setAdapter(tMarqueArrayAdapter);
+
             mListView.setOnItemClickListener(this);
         }else {
             mListView.setVisibility(View.INVISIBLE);
@@ -104,16 +104,15 @@ public class MarquesFragment extends Fragment implements View.OnClickListener, L
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        // Récupération de l'ID de la marque
         int tIdMarque = mMarques.get(i).getIdMarque();
+
+        // Création du fragment de modèles
         ModeleFragment tFragment = new ModeleFragment();
 
-        // Passage de l'ID au fragment
+        // Création des arguments du fragment
         Bundle tBundle = new Bundle();
         tBundle.putInt("ID_MARQUE", tIdMarque);
-        tFragment.setArguments(tBundle);
 
-        // Affichage du fragment
         mFragmentManager.showFragment(tFragment, tBundle);
     }
 }

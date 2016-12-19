@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         showFragment(new MarquesFragment());
 
+        FlowManager.init(new FlowConfig.Builder(this).openDatabasesOnInit(true).build());
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }

@@ -15,7 +15,6 @@ import android.widget.TextView;
 
 import com.raizlabs.android.dbflow.sql.language.SQLite;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import fr.itomorrow.mesfeutresalcool.R;
@@ -70,12 +69,12 @@ public class ModeleFragment extends Fragment {
         super.onResume();
 
         mModeles = SQLite.select().from(Modele.class).where(Modele_Table.mIdMarque.is(mIdMarque)).queryList();
-//        mModeles = new ArrayList<>();
 
         if(mModeles.size() > 0){
             mTextViewListeVide.setVisibility(View.INVISIBLE);
 
             mModeleArrayAdapter = new ModeleArrayAdapter(getActivity(), 0, mModeles);
+            mModeleArrayAdapter.setmFragmentManager(mFragmentManager);
             mListViewModele.setAdapter(mModeleArrayAdapter);
         }else {
             mListViewModele.setVisibility(View.INVISIBLE);
@@ -91,11 +90,12 @@ public class ModeleFragment extends Fragment {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.action_add_marque:
+                // Création du fragment ajouter modele
                 AjouterModeleFragment tFragment = new AjouterModeleFragment();
 
+                // Création des arguments pour le fragment
                 Bundle tBundle = new Bundle();
                 tBundle.putInt("ID_MARQUE", mIdMarque);
-                tFragment.setArguments(tBundle);
 
                 mFragmentManager.showFragment(tFragment, tBundle);
 

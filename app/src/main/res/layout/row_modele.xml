@@ -1,36 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingTop="10dp"
-    android:paddingBottom="10dp"
     android:paddingLeft="20dp"
+    android:paddingBottom="10dp"
     android:paddingRight="20dp">
 
-    <TextView
-        android:text="Modele"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/fragment_modele_row_modele_textview"
-        android:textStyle="normal|bold" />
-
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical">
 
         <TextView
-            android:text="Couleur"
-            android:layout_width="0dp"
+            android:text="Modele"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/fragment_modele_row_couleur_textview"
-            android:layout_weight="1" />
+            android:id="@+id/fragment_modele_row_modele_textview"
+            android:textStyle="normal|bold" />
 
-        <TextView
-            android:text="Code"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/fragment_modele_row_code_textview" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Couleur"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/fragment_modele_row_couleur_textview"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="Code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fragment_modele_row_code_textview" />
+
+        </LinearLayout>
     </LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        android:id="@+id/fragment_rowmodele_modifier_imagebutton" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        android:id="@+id/fragment_rowmodele_supprimer_imagebutton" />
 
 </LinearLayout>
