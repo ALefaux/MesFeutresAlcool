@@ -47,6 +47,9 @@ public class AjouterMarqueFragment extends Fragment implements View.OnClickListe
         mButtonAjouter = (Button) rView.findViewById(R.id.fragment_ajouter_marque_ajouter_button);
         mButtonAnnuler = (Button) rView.findViewById(R.id.fragment_ajouter_marque_annuler_button);
 
+        /**
+         * utilise des string static cf TODO : on create view modelefragment.java
+         */
         if(getArguments() != null && getArguments().containsKey("STRING_MARQUE")
                 && getArguments().containsKey("INT_MARQUE")) {
             mEditTextMarque.setText(getArguments().getString("STRING_MARQUE"));

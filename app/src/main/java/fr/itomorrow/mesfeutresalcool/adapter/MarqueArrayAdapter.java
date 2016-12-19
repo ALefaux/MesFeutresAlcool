@@ -22,7 +22,7 @@ import fr.itomorrow.mesfeutresalcool.interfaces.FragmentManagerInterface;
  * Created by Axou on 10/12/2016.
  */
 
-public class MarqueArrayAdapter extends ArrayAdapter<Marque> implements View.OnClickListener {
+public class MarqueArrayAdapter extends ArrayAdapter<Marque> implements View.OnClickListener{
 
     private Context mContext;
 
@@ -55,11 +55,17 @@ public class MarqueArrayAdapter extends ArrayAdapter<Marque> implements View.OnC
         mModifierImageButton = (ImageButton) rView.findViewById(R.id.fragment_marque_modifier_imagebutton);
 
         mTextViewMarque.setText(mListMarques.get(position).getMarque());
+        mCurrentMarque = mListMarques.get(position);
+        mModifierImageButton.setTag(Integer.valueOf(position));
+
         mModifierImageButton.setOnClickListener(this);
 
-        mCurrentMarque = mListMarques.get(position);
-
         return rView;
+    }
+
+    @Override
+    public int getPosition(Marque item) {
+        return super.getPosition(item);
     }
 
     @Override
@@ -69,8 +75,9 @@ public class MarqueArrayAdapter extends ArrayAdapter<Marque> implements View.OnC
 
                 AjouterMarqueFragment tFragment = new AjouterMarqueFragment();
 
+                int tPosition = Integer.parseInt(view.getTag().toString());
                 Log.i(getClass().getName(), "IDMARQUE : " + mCurrentMarque.getIdMarque());
-
+                mCurrentMarque = mListMarques.get(tPosition);
                 Bundle tBundle = new Bundle();
                 tBundle.putInt("INT_MARQUE", mCurrentMarque.getIdMarque());
                 tBundle.putString("STRING_MARQUE", mCurrentMarque.getMarque());

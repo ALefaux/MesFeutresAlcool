@@ -64,6 +64,9 @@ public class MarquesFragment extends Fragment implements View.OnClickListener, L
             case R.id.action_add_marque:
                 AjouterMarqueFragment tFragment = new AjouterMarqueFragment();
 
+                /**
+                 * tu utlise le manager c'est cool et beaucoup mieux :)
+                 */
                 mFragmentManager.showFragment(tFragment);
 
                 break;

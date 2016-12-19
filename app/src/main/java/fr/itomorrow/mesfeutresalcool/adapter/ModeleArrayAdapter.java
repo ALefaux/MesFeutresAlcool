@@ -22,7 +22,7 @@ import fr.itomorrow.mesfeutresalcool.interfaces.FragmentManagerInterface;
  * Created by Axou on 10/12/2016.
  */
 
-public class ModeleArrayAdapter extends ArrayAdapter<Modele> {
+public class ModeleArrayAdapter extends ArrayAdapter<Modele> implements View.OnClickListener {
 
     private Context mContext;
 
@@ -67,7 +67,7 @@ public class ModeleArrayAdapter extends ArrayAdapter<Modele> {
                 Log.i(getClass().getName(), "ID_MODELE_MODELEARRAYADAPTER : " + mCurrentModele.getmIdModele());
             }
         });
-        //mImageButtonSupprimer.setOnClickListener(this);
+        mImageButtonSupprimer.setOnClickListener(this);
 
         mTextViewModele.setText(mCurrentModele.getmModele());
         mTextViewCouleur.setText(mCurrentModele.getmCouleur());
@@ -75,7 +75,7 @@ public class ModeleArrayAdapter extends ArrayAdapter<Modele> {
 
         return rView;
     }
-/*
+
     @Override
     public void onClick(View view) {
         switch (view.getId()){
@@ -84,6 +84,10 @@ public class ModeleArrayAdapter extends ArrayAdapter<Modele> {
 
                 Bundle tBundle = new Bundle();
                 Log.i(getClass().getName(), "ID_MODELE : " + mCurrentModele.getmIdModele());
+                /**
+                 * TODO : Utilise des string static a un seul endroid ca evitera les fautes de frappes
+                 * utlisation : MaClasse.MON_STRING_STATIC_EN_PUBLIC à la place de ID_MARQUE
+                 */
                 tBundle.putInt("IDMODELE_INT", mCurrentModele.getmIdModele());
                 tBundle.putString("MODELE_STRING", mCurrentModele.getmModele());
                 tBundle.putString("COULEUR_STRING", mCurrentModele.getmCouleur());
@@ -96,5 +100,5 @@ public class ModeleArrayAdapter extends ArrayAdapter<Modele> {
             case R.id.fragment_rowmodele_supprimer_imagebutton:
                 break;
         }
-    }*/
+    }
 }

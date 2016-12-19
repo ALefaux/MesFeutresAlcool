@@ -57,6 +57,11 @@ public class ModeleFragment extends Fragment {
 
         mTextViewListeVide = (TextView) rView.findViewById(R.id.fragment_modele_modelevide_textview);
         mListViewModele = (ListView) rView.findViewById(R.id.fragment_modele_modele_listview);
+
+        /**
+         * TODO : Utilise des string static a un seul endroid ca evitera les fautes de frappes
+         * utlisation : MaClasse.MON_STRING_STATIC_EN_PUBLIC à la place de ID_MARQUE
+         */
         mIdMarque = getArguments().getInt("ID_MARQUE");
 
         setHasOptionsMenu(true);
@@ -68,15 +73,29 @@ public class ModeleFragment extends Fragment {
     public void onResume() {
         super.onResume();
 
+        /**
+         * TODO : faire un manager
+         */
         mModeles = SQLite.select().from(Modele.class).where(Modele_Table.mIdMarque.is(mIdMarque)).queryList();
 
         if(mModeles.size() > 0){
+            /**
+             * INVISIBLE ne sert a rien utiliser gone
+             * exemple un bouton invisible peut quand meme etre cliqué meme si l'utilisateur ne le voit pas il est present sur la vue
+             * avec gone il n'est plus affiché donc on est sur qu'il ne perturbera pas la vue
+             */
             mTextViewListeVide.setVisibility(View.INVISIBLE);
 
+            /**
+             * au lieu de toujours faire getActvity , sauvegarde le context une fois pour toute puis utilise ton attribut context
+             */
             mModeleArrayAdapter = new ModeleArrayAdapter(getActivity(), 0, mModeles);
             mModeleArrayAdapter.setmFragmentManager(mFragmentManager);
             mListViewModele.setAdapter(mModeleArrayAdapter);
         }else {
+            /**
+             * meme remarque INVISBLE vs GONE
+             */
             mListViewModele.setVisibility(View.INVISIBLE);
         }
     }
@@ -95,6 +114,12 @@ public class ModeleFragment extends Fragment {
 
                 // Création des arguments pour le fragment
                 Bundle tBundle = new Bundle();
+                /**
+                 * TODO : Utilise des string static a un seul endroid ca evitera les fautes de frappes
+                 * utlisation : MaClasse.MON_STRING_STATIC_EN_PUBLIC à la place de ID_MARQUE
+                 * Tu as deja utilisé cette chaine de caratères risque de conflit utilise plutot
+                 * ID_MARQUE_DISPLAY ou ID_MARQUE_SELECT ect
+                 */
                 tBundle.putInt("ID_MARQUE", mIdMarque);
 
                 mFragmentManager.showFragment(tFragment, tBundle);
